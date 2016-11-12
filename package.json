@@ -1,0 +1,30 @@
+{
+  "name": "code-splitting",
+  "version": "1.0.0",
+  "description": "A beginner's guide to Code Splitting with React Router and Webpack 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node webpack/webpack-dev-server --env.dev",
+    "build": "rm -Rf build/* | NODE_ENV=production webpack --config webpack/webpack.config.js --progress --env.prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brotzky/code-splitting.git"
+  },
+  "author": "Dennis Brotzky <brotzky@gmail.com>",
+  "homepage": "https://github.com/brotzky/code-splitting",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "v3.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "html-webpack-plugin": "^2.24.1",
+    "webpack": "v2.1.0-beta.25",
+    "webpack-dev-server": "v2.1.0-beta.10"
+  }
+}
