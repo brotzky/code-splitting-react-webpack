@@ -21,12 +21,12 @@ module.exports = env => {
      * after running all its loaders and plugins.
      *
      * > [name].[hash].js will output something like app.3531f6aad069a0e8dc0e.js
-     * > path.join(__dirname, '../build/') will output into a /build folder in
+     * > path.join(__dirname, '../docs/') will output into a /docs folder in
      *   the root of this prject.
      */
     output: {
       filename: '[name].[hash].js',
-      path: path.join(__dirname, '../build/'),
+      path: path.join(__dirname, '../docs/'),
       publicPath: '/',
     },
 
