@@ -3,8 +3,7 @@
  * split JavaScript files. The splitting of components
  * is based off the routes created in this file.
  */
-
-import Core from '../modules/Core';
+import Core from './components/Core';
 
 // throws an error in the console of the page wasn't able to load
 function errorLoading(error) {
@@ -30,7 +29,7 @@ export default {
   component: Core,
   indexRoute: {
     getComponent(location, cb) {
-      System.import('../modules/Home')
+      System.import('./components/Home')
         .then(loadRoute(cb))
         .catch(errorLoading);
     },
@@ -39,23 +38,15 @@ export default {
     {
       path: 'about',
       getComponent(location, cb) {
-        System.import('../modules/About')
+        System.import('./components/About')
           .then(loadRoute(cb, false))
-          .catch(errorLoading);
-      },
-    },
-    {
-      path: 'blog',
-      getComponent(location, cb) {
-        System.import('../modules/Blog')
-          .then(loadRoute(cb))
           .catch(errorLoading);
       },
     },
     {
       path: 'users',
       getComponent(location, cb) {
-        System.import('../modules/Users')
+        System.import('./components/Users')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },
@@ -63,7 +54,7 @@ export default {
     {
       path: '*',
       getComponent(location, cb) {
-        System.import('../modules/Home')
+        System.import('./components/Home')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },

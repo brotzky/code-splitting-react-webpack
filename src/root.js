@@ -1,7 +1,7 @@
 import React from 'react';
 import Router from 'react-router/lib/Router';
 import browserHistory from 'react-router/lib/browserHistory';
-import routes from '../routes/';
+import routes from './routes';
 
 /**
  * Router takes in the browserHitsory and all the routes we 

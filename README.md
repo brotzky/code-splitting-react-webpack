@@ -1,6 +1,7 @@
 # Code Splitting with React Router and Webpack
 
 An example of how to code split a React application using Webpack and React Router.
+[Live Demo](http://brotzky.co/code-splitting/)
 
 ## Installation and Starting
 
