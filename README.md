@@ -1,6 +1,6 @@
 # Code Splitting with React Router and Webpack
 
-A simple example of how to code split a React application based routes.
+An example of how to code split a React application using Webpack and React Router.
 
 ## Installation and Starting
 
@@ -20,3 +20,32 @@ The technology used for this example:
 * Webpack 2
 * Babel
 
+
+## Directory
+
+The content you should focus on to get a better idea of what is going on.
+
+```
+code-splitting/
+|   package.json
+|
+└───src/
+│   │
+│   └───modules/
+│   |   │   Core.js
+│   |   |   ...
+│   |
+│   └───root/
+│   |   │   index.js
+│   |
+│   └───routes/
+│   |   │   index.js
+│   │ 
+│   │   index.html
+│   │   index.js
+│   
+│   
+└───webpack/
+    │   webpack-dev-server.js
+    │   webpack.config.js
+```
