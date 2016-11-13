@@ -32,20 +32,20 @@ code-splitting/
 └───src/
 │   │
 │   └───modules/
-│   |   │   Core.js
-│   |   |   ...
+│   |     Core.js
+│   |     ...
 │   |
 │   └───root/
-│   |   │   index.js
+│   |     index.js
 │   |
 │   └───routes/
-│   |   │   index.js
+│   |     index.js
 │   │ 
-│   │   index.html
-│   │   index.js
+│   │ index.html
+│   │ index.js
 │   
 │   
 └───webpack/
-    │   webpack-dev-server.js
-    │   webpack.config.js
+      webpack-dev-server.js
+      webpack.config.js
 ```
