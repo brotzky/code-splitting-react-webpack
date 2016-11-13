@@ -3,6 +3,9 @@
 An example of how to code split a React application using Webpack and React Router.
 [Live Demo](http://brotzky.co/code-splitting/)
 
+## Guide
+[Step-by-step guide](http://brotzky.co/blog/a-beginners-step-by-step-guide-to-code-splitting-with-webpack-2-and-react-router/)
+
 ## Installation and Starting
 
 ```
