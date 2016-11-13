@@ -19,7 +19,6 @@ function loadRoute(cb) {
  * <Route path="/" component={Core}>
  *   <IndexRoute component={Home}/>
  *   <Route path="about" component={About}/>
- *   <Route path="blog" component={Blog}/>
  *   <Route path="users" component={Users}>
  *   <Route path="*" component={Home}/>
  * </Route>
