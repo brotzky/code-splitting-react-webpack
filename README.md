@@ -6,7 +6,8 @@ An example of how to code split a React application using Webpack 2 and React Ro
 
 ## Guide
 
-There is a easy to follow guide to
+There is an easy to follow guide to help you full understand the concepts.
+
 [Step-by-step guide](http://brotzky.co/blog/a-beginners-step-by-step-guide-to-code-splitting-with-webpack-2-and-react-router/)
 
 ## Installation and Starting
@@ -57,5 +58,5 @@ code-splitting/
 ```
 
 <div align="center">
-  <sub>Made by <a href="https://twitter.com/brotzky">Dennis Brotzky</a>. <i>If you need any help please file an issue or contact me through <a href="https://twitter.com/dennisbrotzky">twitter</a>!</i></sub>
+  <sub>Made by <a href="https://twitter.com/brotzky">Dennis Brotzky</a>. <i>If you need help please file an issue or contact me through <a href="https://twitter.com/dennisbrotzky">twitter</a>!</i></sub>
 </div>
