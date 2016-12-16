@@ -12,8 +12,8 @@ const env = { dev: process.env.NODE_ENV };
 
 const devServerConfig = {
   contentBase: path.join(__dirname, '../../src/'),
-  // Need historyApiFallback to be able to refresh on dynamic route
-  historyApiFallback: { disableDotRule: true },
+  historyApiFallback: { disableDotRule: true }, // Need historyApiFallback to be able to refresh on dynamic route
+  stats: { colors: true } // Pretty colors in console
 };
 
 const server = new WebpackDevServer(webpack(webpackConfig(env)), devServerConfig);
