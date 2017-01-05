@@ -38,7 +38,7 @@ export default {
       path: 'about',
       getComponent(location, cb) {
         System.import('./components/About')
-          .then(loadRoute(cb, false))
+          .then(loadRoute(cb))
           .catch(errorLoading);
       },
     },
