@@ -58,5 +58,5 @@ code-splitting/
 ```
 
 <div align="center">
-  <sub>Made by <a href="https://twitter.com/dennisbrotzky">Dennis Brotzky</a>. <i>If you need help please file an issue or contact me through <a href="https://twitter.com/dennisbrotzky">twitter</a>!</i></sub>
+  <sub>Made by <a href="https://twitter.com/_brotzky">Dennis Brotzky</a>. <i>If you need help please file an issue or contact me through <a href="https://twitter.com/_brotzky">twitter</a>!</i></sub>
 </div>
