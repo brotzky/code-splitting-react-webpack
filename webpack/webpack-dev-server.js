@@ -2,10 +2,10 @@
  * Webpack Dev Server
  * This file is used to run our local enviroment
  */
-const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const webpackConfig = require('./webpack.config');
-const path = require('path');
+import webpack from 'webpack';
+import WebpackDevServer from 'webpack-dev-server';
+import webpackConfig = './webpack.config';
+import path from'path';
 
 // always dev enviroment when running webpack dev server
 const env = { dev: process.env.NODE_ENV };
