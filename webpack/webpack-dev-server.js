@@ -7,7 +7,11 @@ import WebpackDevServer from 'webpack-dev-server';
 import webpackConfig = './webpack.config';
 import path from'path';
 
-// always dev enviroment when running webpack dev server
+/**
+ * Always dev enviroment when running webpack dev server
+ * There are other ways to do this, so feel free to do
+ * whatever you find suites your taste
+ */
 const env = { dev: process.env.NODE_ENV };
 
 const devServerConfig = {
