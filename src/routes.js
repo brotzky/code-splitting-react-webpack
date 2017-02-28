@@ -5,7 +5,7 @@
  */
 import Core from './components/Core';
 
-// throws an error in the console of the page wasn't able to load
+// throws an error in the console if the page wasn't able to load
 function errorLoading(error) {
   throw new Error(`Dynamic page loading failed: ${error}`);
 }
