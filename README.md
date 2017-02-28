@@ -13,9 +13,13 @@ There is an easy to follow guide to help you fully understand the concepts.
 ## Installation and Starting
 
 ```
-git clone https://github.com/brotzky/code-splitting.git && cd code-splitting
-yarn install
+git clone https://github.com/brotzky/code-splitting-react-webpack.git && cd code-splitting-react-webpack
+yarn
 yarn start
+
+# or npm
+npm install
+npm start
 ```
 
 ## Technology
