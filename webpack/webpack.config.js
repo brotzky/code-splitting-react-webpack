@@ -61,8 +61,7 @@ module.exports = env => {
         inject: 'body',
       }),
 
-      // Only running DedupePlugin() and UglifyJsPlugin() in production
-      ifProd(new webpack.optimize.DedupePlugin()),
+      // Only running and UglifyJsPlugin() in production
       ifProd(new webpack.optimize.UglifyJsPlugin({
         compress: {
           'screw_ie8': true,
