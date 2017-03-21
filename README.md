@@ -16,10 +16,12 @@ There is an easy to follow guide to help you fully understand the concepts.
 git clone https://github.com/brotzky/code-splitting-react-webpack.git && cd code-splitting-react-webpack
 yarn
 yarn start
+> visit localhost:3000
 
 # or npm
 npm install
 npm start
+> visit localhost:3000
 ```
 
 ## Technology
