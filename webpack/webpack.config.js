@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Autoprefixer = require('autoprefixer');
 const path = require('path');
 
 // Okay, this may be confusing at first glance but go through it step-by-step
@@ -41,6 +43,18 @@ module.exports = env => {
             cacheDirectory: true,
           },
         },
+        {
+          test: /\.(scss|css)$/,
+          loaders:
+            env.dev || env.test
+            ? [
+              'style-loader',
+              'css-loader?minimize&-autoprefixer',
+              'postcss-loader',
+              'sass-loader',
+            ]
+            : ExtractTextPlugin.extract({ fallback: 'style-loader', loader: 'css-loader?minimize&-autoprefixer!postcss-loader!sass-loader' }),
+        },
       ],
     },
 
@@ -50,7 +64,6 @@ module.exports = env => {
         minChunks: Infinity,
         filename: '[name].[hash].js',
       }),
-
       /**
       * HtmlWebpackPlugin will make sure out JavaScriot files are being called
       * from within our index.html
@@ -60,9 +73,19 @@ module.exports = env => {
         filename: 'index.html',
         inject: 'body',
       }),
+      new webpack.LoaderOptionsPlugin({
+        minimize: env.prod, // mimimize true in production
+        debug: env.dev, // debug true in development
+        options: {
+          context: __dirname,
+          postcss: [Autoprefixer({ browsers: ['last 3 versions'] })],
+        },
+      }),
 
-      // Only running DedupePlugin() and UglifyJsPlugin() in production
-      ifProd(new webpack.optimize.DedupePlugin()),
+      // Only running ExtractTextPlugin() and UglifyJsPlugin() in production
+      ifProd(new ExtractTextPlugin({
+        filename: '[name].[hash].css',
+      })),
       ifProd(new webpack.optimize.UglifyJsPlugin({
         compress: {
           'screw_ie8': true,
