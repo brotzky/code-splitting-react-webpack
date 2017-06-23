@@ -28,7 +28,7 @@ export default {
   component: Core,
   indexRoute: {
     getComponent(location, cb) {
-      System.import('./components/Home')
+      System.import(/* webpackChunkName: "home" */ './components/Home')
         .then(loadRoute(cb))
         .catch(errorLoading);
     },
@@ -37,7 +37,7 @@ export default {
     {
       path: 'about',
       getComponent(location, cb) {
-        System.import('./components/About')
+        System.import(/* webpackChunkName: "about" */ './components/About')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },
@@ -45,7 +45,7 @@ export default {
     {
       path: 'users',
       getComponent(location, cb) {
-        System.import('./components/Users')
+        System.import(/* webpackChunkName: "users" */ './components/Users')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },
@@ -53,7 +53,7 @@ export default {
     {
       path: '*',
       getComponent(location, cb) {
-        System.import('./components/Home')
+        System.import(/* webpackChunkName: "home" */ './components/Home')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },

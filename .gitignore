@@ -8,3 +8,6 @@ node_modules
 
 # Wonderful macOS features
 .DS_Store
+
+# npm5.0 added package-lock.json 
+package-lock.json
