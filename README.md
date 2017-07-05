@@ -1,6 +1,6 @@
-# Code Splitting with React Router and Webpack 2
+# Code Splitting with React Router v3 and Webpack 2/3
 
-An example of how to code split a React application using Webpack 2 and React Router.
+An example of how to code split a React application using Webpack 2/3 and React Router v3.
 
 [Live Demo](http://brotzky.co/code-splitting/)
 
@@ -30,7 +30,7 @@ The technology used for this example:
 
 * React
 * React Router v3
-* Webpack 2
+* Webpack 2 or 3
 * Babel
 
 
@@ -62,6 +62,9 @@ code-splitting/
       webpack-dev-server.js
       webpack.config.js
 ```
+
+## React Router v4
+[The React Router docs have a simple guide for code splitting](https://reacttraining.com/react-router/web/guides/code-splitting)
 
 <div align="center">
   <sub>Made by <a href="https://twitter.com/_brotzky">Dennis Brotzky</a>. <i>If you need help please file an issue or contact me through <a href="https://twitter.com/_brotzky">twitter</a>!</i></sub>
